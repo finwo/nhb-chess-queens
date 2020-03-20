@@ -9,21 +9,6 @@
  */
 function solution_valid(array $board): bool {
 
-    // Check for vertical duplicate
-    // validate by rotating the board (swap x/y axis)
-    $rotated = [];
-    for($y = 0 ; $y < 7 ; $y++) {
-        $x = $board[$y];
-
-        // Duplicate found = fail
-        if (isset($rotated[$x])) {
-            return false;
-        }
-
-        // Track rotated board
-        $rotated[$x] = $y;
-    }
-
     // Check diagonal y+x
     // Builds view and checks for duplicates
     $sums = array_fill(0,13,0);
@@ -100,5 +85,8 @@ function solution_print(array $board): void {
         // Print bottom edge of row
         echo '+---+---+---+---+---+---+---+', PHP_EOL;
     }
+
+    // Give the reader some space
+    echo PHP_EOL;
 }
 
