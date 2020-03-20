@@ -35,7 +35,7 @@ Handling the board as a graph we approach the problem as solving the
 
 Because 7 is a prime number, all integers below it (e.g. locations on the
   board) are co-prime to it. This removes the need for horizontal and
-  vertical checks, even though they are included.
+  vertical checks.
 
 Approach:
 - Select an increment
