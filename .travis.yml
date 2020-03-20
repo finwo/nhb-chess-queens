@@ -9,5 +9,4 @@ php:
   - 7.4
 
 script:
-  - php -l util.php
-  - php -l index.php
+  - find . -name \*.php | xargs -n 1 -P 4 php -l
