@@ -7,7 +7,7 @@
  *
  * @return boolean $valid  Whether or not the given solution is valid
  */
-function solution_valid(array $board): bool {
+function solution_valid(array $board) {
 
     // Check diagonal y+x
     // Builds view and checks for duplicates
@@ -62,7 +62,7 @@ function solution_valid(array $board): bool {
  *
  * @param array $board
  */
-function solution_print(array $board): void {
+function solution_print(array $board) {
 
     // Print top edge
     echo '+---+---+---+---+---+---+---+', PHP_EOL;
