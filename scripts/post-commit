@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 git fetch origin refs/notes/gtm-data:refs/notes/gtm-data
 gtm commit --yes || /usr/local/bin/gtm commit --yes
